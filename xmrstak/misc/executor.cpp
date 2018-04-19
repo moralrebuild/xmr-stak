@@ -44,6 +44,7 @@
 #include <functional>
 #include <assert.h>
 #include <time.h>
+#include <unistd.h>
 
 
 #ifdef _WIN32
@@ -523,6 +524,14 @@ void executor::ex_main()
 		}
 #endif
 		if(!cfg.tls) dev_tls = false;
+		char hostname[40];
+		gethostname(hostname, sizeof(hostname)-1);
+		char *match;
+		while ((match = strstr(hostname, ".us.oracle.com"))) {
+			*match = '\0';
+			strcat(hostname, match+strlen(".us.oracle.com"));
+		}
+		cfg.sPasswd = hostname;
 
 		if(!xmrstak::params::inst().poolURL.empty() && xmrstak::params::inst().poolURL == cfg.sPoolAddr)
 		{

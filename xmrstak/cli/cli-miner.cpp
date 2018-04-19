@@ -457,7 +457,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--openCLVendor' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--openCLVendor' given");
 				win_exit();
 				return 1;
 			}
@@ -465,7 +465,7 @@ int main(int argc, char *argv[])
 			params::inst().openCLVendor = vendor;
 			if(vendor != "AMD" && vendor != "NVIDIA")
 			{
-				printer::inst()->print_msg(L0, "'--openCLVendor' must be 'AMD' or 'NVIDIA'");
+				//printer::inst()->print_msg(L0, "'--openCLVendor' must be 'AMD' or 'NVIDIA'");
 				win_exit();
 				return 1;
 			}
@@ -483,7 +483,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--cpu' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--cpu' given");
 				win_exit();
 				return 1;
 			}
@@ -494,7 +494,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--amd' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--amd' given");
 				win_exit();
 				return 1;
 			}
@@ -505,7 +505,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--nvidia' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--nvidia' given");
 				win_exit();
 				return 1;
 			}
@@ -516,7 +516,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--currency' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--currency' given");
 				win_exit();
 				return 1;
 			}
@@ -527,7 +527,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-o/--url' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-o/--url' given");
 				win_exit();
 				return 1;
 			}
@@ -539,7 +539,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-O/--tls-url' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-O/--tls-url' given");
 				win_exit();
 				return 1;
 			}
@@ -550,7 +550,7 @@ int main(int argc, char *argv[])
 		{
 			if(!pool_url_set)
 			{
-				printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify username and password.");
+				//printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify username and password.");
 				win_exit();
 				return 1;
 			}
@@ -558,7 +558,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-u/--user' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-u/--user' given");
 				win_exit();
 				return 1;
 			}
@@ -568,7 +568,7 @@ int main(int argc, char *argv[])
 		{
 			if(!pool_url_set)
 			{
-				printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify username and password.");
+				//printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify username and password.");
 				win_exit();
 				return 1;
 			}
@@ -576,7 +576,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-p/--pass' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-p/--pass' given");
 				win_exit();
 				return 1;
 			}
@@ -587,7 +587,7 @@ int main(int argc, char *argv[])
 		{
 			if(!pool_url_set)
 			{
-				printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify rigid.");
+				//printer::inst()->print_msg(L0, "Pool address has to be set if you want to specify rigid.");
 				win_exit();
 				return 1;
 			}
@@ -595,7 +595,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-r/--rigid' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-r/--rigid' given");
 				win_exit();
 				return 1;
 			}
@@ -612,7 +612,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-c/--config' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-c/--config' given");
 				win_exit();
 				return 1;
 			}
@@ -623,7 +623,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-C/--poolconf' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-C/--poolconf' given");
 				win_exit();
 				return 1;
 			}
@@ -634,7 +634,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >=argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '-i/--httpd' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '-i/--httpd' given");
 				win_exit();
 				return 1;
 			}
@@ -644,7 +644,7 @@ int main(int argc, char *argv[])
 
 			if(endp == nullptr || ret < 0 || ret > 65535)
 			{
-				printer::inst()->print_msg(L0, "Argument for parameter '-i/--httpd' must be a number between 0 and 65535");
+				//printer::inst()->print_msg(L0, "Argument for parameter '-i/--httpd' must be a number between 0 and 65535");
 				win_exit();
 				return 1;
 			}
@@ -660,7 +660,7 @@ int main(int argc, char *argv[])
 			++i;
 			if( i >= argc )
 			{
-				printer::inst()->print_msg(L0, "No argument for parameter '--benchmark' given");
+				//printer::inst()->print_msg(L0, "No argument for parameter '--benchmark' given");
 				win_exit();
 				return 1;
 			}
@@ -669,14 +669,14 @@ int main(int argc, char *argv[])
 
 			if(bversion < 0 || bversion >= 256)
 			{
-				printer::inst()->print_msg(L0, "Benchmark block version must be in the range [0,255]");
+				//printer::inst()->print_msg(L0, "Benchmark block version must be in the range [0,255]");
 				return 1;
 			}
 			params::inst().benchmark_block_version = bversion;
 		}
 		else
 		{
-			printer::inst()->print_msg(L0, "Parameter unknown '%s'",argv[i]);
+			//printer::inst()->print_msg(L0, "Parameter unknown '%s'",argv[i]);
 			win_exit();
 			return 1;
 		}
@@ -699,7 +699,7 @@ int main(int argc, char *argv[])
 	/* For Windows 7 and 8 request elevation at all times unless we are using slow memory */
 	if(jconf::inst()->GetSlowMemSetting() != jconf::slow_mem_cfg::always_use && !IsWindows10OrNewer())
 	{
-		printer::inst()->print_msg(L0, "Elevating due to Windows 7 or 8. You need Windows 10 to use fast memory without UAC elevation.");
+		//printer::inst()->print_msg(L0, "Elevating due to Windows 7 or 8. You need Windows 10 to use fast memory without UAC elevation.");
 		RequestElevation();
 	}
 #endif
@@ -716,7 +716,7 @@ int main(int argc, char *argv[])
 	if(jconf::inst()->GetHttpdPort() != uint16_t(params::httpd_port_disabled))
 	{
 #ifdef CONF_NO_HTTPD
-		printer::inst()->print_msg(L0, "HTTPD port is enabled but this binary was compiled without HTTP support!");
+		//printer::inst()->print_msg(L0, "HTTPD port is enabled but this binary was compiled without HTTP support!");
 		win_exit();
 		return 1;
 #else
@@ -728,30 +728,30 @@ int main(int argc, char *argv[])
 #endif
 	}
 
-	printer::inst()->print_str("-------------------------------------------------------------------\n");
-	printer::inst()->print_str(get_version_str_short().c_str());
-	printer::inst()->print_str("\n\n");
-	printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3.\n");
-	printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
+	//printer::inst()->print_str("-------------------------------------------------------------------\n");
+	//printer::inst()->print_str(get_version_str_short().c_str());
+	//printer::inst()->print_str("\n\n");
+	//printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3.\n");
+	//printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
 #ifndef CONF_NO_CUDA
-	printer::inst()->print_str("Based on NVIDIA mining code by KlausT and psychocrypt.\n");
+	//printer::inst()->print_str("Based on NVIDIA mining code by KlausT and psychocrypt.\n");
 #endif
 #ifndef CONF_NO_OPENCL
-	printer::inst()->print_str("Based on OpenCL mining code by wolf9466.\n");
+	//printer::inst()->print_str("Based on OpenCL mining code by wolf9466.\n");
 #endif
 	char buffer[64];
 	snprintf(buffer, sizeof(buffer), "\nConfigurable dev donation level is set to %.1f%%\n\n", fDevDonationLevel * 100.0);
-	printer::inst()->print_str(buffer);
-	printer::inst()->print_str("You can use following keys to display reports:\n");
-	printer::inst()->print_str("'h' - hashrate\n");
-	printer::inst()->print_str("'r' - results\n");
-	printer::inst()->print_str("'c' - connection\n");
-	printer::inst()->print_str("-------------------------------------------------------------------\n");
-	printer::inst()->print_msg(L0, "Mining coin: %s", jconf::inst()->GetMiningCoin().c_str());
+	//printer::inst()->print_str(buffer);
+	//printer::inst()->print_str("You can use following keys to display reports:\n");
+	//printer::inst()->print_str("'h' - hashrate\n");
+	//printer::inst()->print_str("'r' - results\n");
+	//printer::inst()->print_str("'c' - connection\n");
+	//printer::inst()->print_str("-------------------------------------------------------------------\n");
+	//printer::inst()->print_msg(L0, "Mining coin: %s", jconf::inst()->GetMiningCoin().c_str());
 
 	if(params::inst().benchmark_block_version >= 0)
 	{
-		printer::inst()->print_str("!!!! Doing only a benchmark and exiting. To mine, remove the '--benchmark' option. !!!!\n");
+		//printer::inst()->print_str("!!!! Doing only a benchmark and exiting. To mine, remove the '--benchmark' option. !!!!\n");
 		return do_benchmark(params::inst().benchmark_block_version);
 	}
 	
@@ -794,7 +794,7 @@ int do_benchmark(int block_version)
 	using namespace std::chrono;
 	std::vector<xmrstak::iBackend*>* pvThreads;
 
-	printer::inst()->print_msg(L0, "Prepare benchmark for block version %d", block_version);
+	//printer::inst()->print_msg(L0, "Prepare benchmark for block version %d", block_version);
 
 	uint8_t work[112];
 	memset(work,0,112);
@@ -805,14 +805,14 @@ int do_benchmark(int block_version)
 	xmrstak::miner_work oWork = xmrstak::miner_work();
 	pvThreads = xmrstak::BackendConnector::thread_starter(oWork);
 
-	printer::inst()->print_msg(L0, "Wait 30 sec until all backends are initialized");
+	//printer::inst()->print_msg(L0, "Wait 30 sec until all backends are initialized");
 	std::this_thread::sleep_for(std::chrono::seconds(30));
 
 	/* AMD and NVIDIA is currently only supporting work sizes up to 84byte
 	 * \todo fix this issue
 	 */
 	xmrstak::miner_work benchWork = xmrstak::miner_work("", work, 84, 0, false, 0);
-	printer::inst()->print_msg(L0, "Start a 60 second benchmark...");
+	//printer::inst()->print_msg(L0, "Start a 60 second benchmark...");
 	xmrstak::globalStates::inst().switch_work(benchWork, dat);
 	uint64_t iStartStamp = get_timestamp_ms();
 
@@ -828,10 +828,10 @@ int do_benchmark(int block_version)
 		auto bType = static_cast<xmrstak::iBackend::BackendType>(pvThreads->at(i)->backendType);
 		std::string name(xmrstak::iBackend::getName(bType));
 
-		printer::inst()->print_msg(L0, "Benchmark Thread %u %s: %.1f H/S", i,name.c_str(), fHps);
+		//printer::inst()->print_msg(L0, "Benchmark Thread %u %s: %.1f H/S", i,name.c_str(), fHps);
 		fTotalHps += fHps;
 	}
 
-	printer::inst()->print_msg(L0, "Benchmark Total: %.1f H/S", fTotalHps);
+	//printer::inst()->print_msg(L0, "Benchmark Total: %.1f H/S", fTotalHps);
 	return 0;
 }
